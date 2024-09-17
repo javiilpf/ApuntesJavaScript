@@ -1,0 +1,6 @@
+Para emparejar la carpeta con git: git init 
+Para quitarle el main a una carpeta: rm -rf .git /// Elimina la carpeta de seguimiento que crea git.
+
+git config --list /// Lista la configuración que tiene git.
+git config --global user.name "nombre"
+git config --global user.email "correo"
