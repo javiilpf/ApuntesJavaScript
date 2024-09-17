@@ -4,3 +4,23 @@ Para quitarle el main a una carpeta: rm -rf .git /// Elimina la carpeta de segui
 git config --list /// Lista la configuración que tiene git.
 git config --global user.name "nombre"
 git config --global user.email "correo"
+git config --global init.defaultBranch main //// Para que las ramas por defecto 
+
+oh my zsh
+
+Para renombrar una rama /// git branch -m master main  /// cambia la rama de master a main
+
+git status -s /// Me indica el estado actual de los archivos// Al principio salen simplemente el seguimiento ("??").
+
+git add . /// manda los archivos al stage área. // Archivos que todavía no están todavía listos como para ser un commit
+
+git commit -m "Inicio Repositorio" // los ficheros de antes dejan de estar en el stage área y salen a través del commit.
+
+git log // muestra los detalles del commit, nos indica de donde a donde está apuntando a la rama main
+
+mark down // Para hacer apuntes o explicaciones en un foro, se transforma a HTML, etc..
+
+
+var no se usa, let y const si
+
+var nombre = "Isaias";
