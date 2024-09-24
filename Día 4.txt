@@ -6,7 +6,7 @@ let a=dato || "texto"   /// Guarda texto, sirve para poner un texto por defecto
 let b= f && d && e && g || h /// si f, d y g son true devuelve lo que contiene g, si no, h
 
 
-condición ? en caso true : en caso false
+condición ? en caso true : en dcaso false
 
 null o undefined ?? haz esto
 
