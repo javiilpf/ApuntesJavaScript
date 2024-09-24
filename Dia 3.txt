@@ -1,0 +1,52 @@
+Un tipo de dato es primitivo si es inmutable y se almacenan exclusivamente en la pila stack de la memoria del ordenador.
+Pila stack memoria muy rápida los objetos que entran no se pueden modificar
+
+falsy ||| truthy
+
+number.isNaN
+
+!! --- Para comprobar si algo es verdadero o falso.
+ 
+"pepe" ? "hola":"adios"
+
+Para ejecutar una función hay que ponerle paréntesis
+saludar;
+saludar();
+
+
+Crear una función que pase como parámetro un número, si es positivo diga que es positivo si es negativo negativo y negativo negativo y cero, sin usar if
+
+-----------------------------------------
+CREACIÓN DE OBJETOS
+
+Se llaman con const porq const no puede cambiar el tipo de dato, al ser un array const permite que siempre siga siendo array
+
+
+const dato = { nombre: "pepe", edad:"24, cp: "18100"}
+
+PARA LLAMAR A LOS OBJETOS CON SU POSICIÓN
+
+dato.edad
+
+export // Permite usar las funciones en otros programas que estén dentro de la carpeta.
+
+
+crear una funcion que compruebe si un numero es primo, dicha funcion debe ser una arrow fusion (flecha) y se debe llamar esPrimo y que le pase como parámetro un número y si no paso nada por parámetro cogera como numero el 0
+
+
+Para crear una arrow fusion
+const esPrimo=(num=0)=>{
+	// num es número?
+}
+
+
+Sacar el factorial de un número
+
+hacer una ecuación de segundo grado
+y=ax2+bx+c
+
+Dame un array de números 1, 3, 5, 7, 2, 4, calcular el máximo, el mínimo, el promedio y la mediana.
+
+echar un vistazo a la clase MATH y al spread operator
+
+¡

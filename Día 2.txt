@@ -1,0 +1,68 @@
+TRES FORMAS DE DECLARAR VARIABLES EN JAVASCRIPT
+var nombre = "Isaías";
+let edad = "35";
+const CP = "18000";
+
+var es peligrosa porque sube el valor que introduzcamos a global, se lo queda el navegador.
+
+tipeof nos indica el tipo de dato con el que estamos trabajando.
+
+number -- Número
+
+bigint -- Tipo de dato en el que el resultado acaba en "n".
+
+boolean -- true o false
+
+string -- Cadena de texto.
+
+Para comentar " // "
+
+Symbol -- Tipo de dato que sea diferente a cualquier tipo de dato (único).
+let f= Symbol("Texto representativo");
+
+number, boolean, string
+
+Introduciéndolos llevamos a cabo la conversión del tipo de dato.
+
+template strings ( template literals )
+
+let a = 10;
+console.log(`El valor de a= ${a}`);
+
+Spread operators
+let z = "hola";
+z[0]
+
+Array.from(cadena) --- Saca un array con lo que puede, por ejemplo una palabra saca cada letra en un hueco del array.
+
+<script src"mi_script.js"></script>
+
+async -- Añadir a la etiqueta script para que el archivo javascript se ejecute de forma asíncrona y no se cargue al principio o al final, así se interpreta de forma conjunta el html
+defer -- Provoca que el archivo javascript se ejecute una vez que se tenga completamente interpretado el archivo html
+
+"hola" == "hola" --- true
+1 == "1" -----------true 
+true == 1 -----------true
+true == "1" ---------true
+
+--------------------------
+El comparador "===" dice estrictamente si son iguales, es decir compara hasta el tipo de dato.
+
+true === 1 ----------false
+
+Recomendable usar siempre la igualdad estricta
+--------------------------
+
+&& --- AND lógico
+|| --- OR lógico
+!  --- NOT lógico
+
+
+OPERADOR TERNARIO
+const esMayor = edad >=18 ? "Sí" : "No";
+console.log(`¿Es mayor de edad?+$esMayor`);
+
+OPERADOR ??
+
+ifernandez@ieshlanz.es
+

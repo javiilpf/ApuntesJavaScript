@@ -1,0 +1,183 @@
+Día 4
+
+Operador de cortocircuito
+let a=dato || "texto"   /// Guarda texto, sirve para poner un texto por defecto
+
+let b= f && d && e && g || h /// si f, d y g son true devuelve lo que contiene g, si no, h
+
+
+condición ? en caso true : en caso false
+
+null o undefined ?? haz esto
+
+const a = [] /// Los arrays se ponen con const porque de esa forma no se pueden cambiar de tipo a string o int.
+
+const b = new Array(1, 2, 3);
+
+En caso de introducir "const c=new Array(5)" /// Crea un array con 5 huecos libres.
+
+//for tradicional
+
+
+// for …. of
+
+for (const nombre of nombres){
+	console.log(nombre);
+}
+
+
+// forEach
+nombre.forEach(nombre => console.log(nombre));
+nombre=>nombre
+
+const numeros={1,2,3,4}
+
+numeros.forEach(numeros=>console.log(numero**2)); // Coge cada uno de los números y los eleva al cuadrado.
+
+numeros.forEach((numero)=>{let cuadrado=numero**2; console.log(cuadrado);})
+
+///Métodos más importantes de javascript 
+SPLIT operator
+const numeros=[1,2,3,4]
+const numeros2=[...numeros]
+numeros2===numeros /// Dará false.
+
+
+numeros.push () /// Añade al final 
+numeros.pop () /// Elimina el último
+
+No hace falta poner la posición ya que el pop o push actuan al final del archivo
+
+numeros.unshift(0) añade al comienzo
+numeros.shift() elimina el primero
+
+numeros.slice 
+numeros.splice
+numeros.concat
+numeros.findIndex
+numeros.filter /********************************Importante
+numeros.reduce /********************************Importante
+numeros.some
+numeros.every
+numeros.map /********************************Importante
+numeros.sort
+
+a.splice(1,3,"hola")
+
+Los tipos de datos no primitivos más importantes son:
+Array, objects, Map, set
+
+----------------objects-----------------
+const persona ={
+	nombre:"Juan",
+	edad:"30",
+	tieneDni : true
+}
+persona.nombre
+
+object.keys(persona) /// Obtengo las keys de persona
+array de personas
+ const personas =[
+	{
+		nombre:"Juan",
+		edad:"30",
+		tieneDni: true
+	}
+ ]
+
+
+//// MAP ES NUESTRO AMIGO
+MAP se utiliza para llamar una función 
+
+const meses=["ene", "feb", "mar"];
+let newUpperMeses=meses.map((mes)=>{
+	return mes.toUpperCase();
+})
+
+let newUpperMeses=meses.map (mes => mes.toUpperCase());
+
+
+Devuelve un array con el resultado aplicado del parámetro que le introducimos.
+
+Sort compara los elementos del array por cadenas y para ordenar el contenido de menor a mayor es:
+.sort((a,b)=>a-b).reverse();
+
+Ejemplo completo:
+Const transacciones [
+	{
+		id:1,
+		mont:8,
+		dirección'0xabc'
+	}
+	{
+		id:2,
+		mont:15,
+		dirección'0xdfe'
+	}
+	{
+		id:3,
+		mont:22,
+		dirección'0xjkl'
+	}
+	{
+		id:4,
+		mont:8,
+		dirección'0xmnq'
+	}
+]
+
+
+export const montMayorMenor =(transacciones)=>{
+  return transacciones.map(transaccion=>transaccion.mount>=12).sort((a,b)=>a-b).reverse();
+
+  
+    
+}
+-----------------------------------------------------------------------------------------------------------------------
+---Ejercicios ---
+Dame un array de numeros calcular aquellos que son pares utilizando los métodos de los arrays
+export const esPar = numeros => numeros.filter((numero) => numero%2 === 0);
+
+Mostrar por pantalla el último numero impar que tiene ese array
+
+Pasandole un array ciudades hay que buscar la ciudad y sustituirla por new ciudad.
+
+Const transacciones [
+	{
+		id:1,
+		mont:8,
+		dirección'0xabc'
+	}
+	{
+		id:2,
+		mont:15,
+		dirección'0xdfe'
+	}
+	{
+		id:3,
+		mont:22,
+		dirección'0xjkl'
+	}
+	{
+		id:4,
+		mont:8,
+		dirección'0xmnq'
+	}
+]
+
+Filtrar las transacciones cuyo mont sea mayor que 12, ordenadas de mayor a 
+menor.
+
+Buscar nombre de la dirección de la transacción y cuando la encuentre diga 
+cuantas transacciones hay mayores que esa y cuantas menores.
+
+Valida que todos los bloques mantienen la integridad, devuelve "se mantiene´
+la integridad" o lo contrario (Se comprueba porque tiene que coincidir el hash
+de la anterior con el prevHas de la siguiente)
+
+const bloques = [
+	{ id : 1, hash: "abc123", prevHas: null	},
+	{ id : 2, hash: "def456", prevHas:'abc123'},
+	{ id : 3, hash: "ghi789", prevHas:'def456'},
+	{ id : 4, hash: "jkl012", prevHas:'ghi789'},
+]

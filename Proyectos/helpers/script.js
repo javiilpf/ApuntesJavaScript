@@ -95,7 +95,55 @@ export const funcion2grado=(a,b,c)=>{
     return "Los valores introducidos no son números."
   }
 }
+/**
+ * @description: Función que devuelve los números que son pares.
+ * @param {number} numero
+ * @returns {Boolean}
+ * @version 1.0
+ */
+export const esPar = numeros => numeros.filter((numero) => numero%2 === 0);
 
+/**
+ * @description: Función que devuelve el último número impar
+ * @param {number} numero
+ * @returns {number}
+ * @version 1.0
+ */
+export const lastImpar =numeros => numeros.filter((numero) => numero%2 !==0).pop();
+
+/**
+ * @description: Funcion que pasa como parámetro para buscar la ciudad y sustituirla por new ciudad
+ * @param {Array, String} Array, ciudad
+ * @returns {number}
+ * @version 1.0
+ */
+
+// export const buscarCiudad = (citysArray, oldCity, newCity) => {
+//   for (let i=0; i<citysArray.lenght; i++){
+//     if(citysArray[1]===oldCity){
+//       citysArray[1]=newCity;
+//       return citysArray;
+//     }
+//   }
+//   return `No he encontrado la ciudad ${oldCity}`;
+// }
+
+export const buscarCiudad = (citysArray, oldCity, newCity) => {
+  citys.map(city=>city=== oldCity ? newCity:city);
+}
+
+/**
+ * @description: Funcion que filtra transacciones cuyo mont sea mayor de 12 ordenadas de mayor a menor
+ * @param {Object} transacciones
+ * @returns {Object}
+ * @version 1.0
+ */
+export const montMayorMenor =(transacciones)=>{
+  return transacciones.map(transaccion=>transaccion.mount>=12).sort((a,b)=>a-b).reverse();
+
+  
+    
+}
 //----------Inicio de la aplicación-----------
 
 console.log(saludar2("Pepe"));
