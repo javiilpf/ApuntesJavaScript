@@ -201,12 +201,14 @@ export const validacionBloques =()=>{
   
   return respuesta;
 }
-//----------Inicio de la aplicación-----------
 
-// console.log(saludar2("Pepe"));
+const numeros=[2,5,8,9,1,3,2,0,7,4,9];
+// usando reduce obten el máximo
+//const maximo=numeros.reduce((acumulador, valorActual, indice, miArray)=> Acciones, valorInicial )
 
-// console.log(numero('2'));
+const maximo=numeros.reduce((acc, numero)=> acc>numero? acc : numero, numeros[0]);
 
-// console.log (numero2("Manuel"));
-
-// console.log(esPrimo(6));
+// usando reduce elimina los duplicados
+let num=[];
+let dupl=[];
+//const duplic=numeros.reduce(acc, numero)=> numero+=1 , numeros[0]);

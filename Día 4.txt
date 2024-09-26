@@ -133,6 +133,24 @@ export const montMayorMenor =(transacciones)=>{
   
     
 }
+
+---------------------------------------------
+TRABAJO CON FOR
+const numeros=[1,2,3,4];
+let contador=0;
+
+dos opciones:
+numeros.forEach(numero=>{ contador += numero;})
+
+for (let numero of numeros){
+	contador += numero;
+
+
+---------------------------------------------
+.reduce
+[1,2,3,4,5,6].reduce((acc, numero,)=>acc+numero, 0);
+
+(0,1)=>0+1=1
 -----------------------------------------------------------------------------------------------------------------------
 ---Ejercicios ---
 Dame un array de numeros calcular aquellos que son pares utilizando los métodos de los arrays
@@ -181,3 +199,8 @@ const bloques = [
 	{ id : 3, hash: "ghi789", prevHas:'def456'},
 	{ id : 4, hash: "jkl012", prevHas:'ghi789'},
 ]
+
+
+
+crear una función que le pase como parámetro un array de nombres y un número de ejercicicos y me devuelva un array de objetos donde me diga nombre: , ejercicio. Aleatoriamente se adios
+genera un array de ejercicios y el numero de ejercicios sea un numero aleatorio que saquemos de la lista que nosotros le pasamos.
