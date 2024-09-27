@@ -1,0 +1,44 @@
+TAILWIND
+Dentro de la carpeta en la que vamos a trabajar:
+npm create vite@latest products-reduce-v1
+
+Se selecciona si lo haces con react, vanilla, vue, preact, solid, etc..
+Se selecciona si es TypeScript, JavaScript, etc..
+
+cd products-reduce-v1
+npm install
+npm run dev
+
+Dentro ejecutamos el siguiente comando:
+npm install -D tailwindcss postcss autoprefixer
+npx  tailwindcss init -p
+
+La estrucutura de ficheros dentro de la carpeta productos:
+-helpers
+-styles
+
+Dentro de estilos introducimos un archivo css(tailwind.css) e introducimos los siguientes parámetros
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+<div id="app"></div>
+
+// -----------Importaciones librerias-------
+import "./styles/tailwind.css";//importacion de estilos
+// -----------Importaciones propias ---------
+import {products} from './data/products.JavaScript
+import {callTotalPrice, productIva} from './helpers/script.js
+//------------Definición de variables----------
+const appDiv=document.getElementById('app');
+//------------Inicio de la aplicación-----------
+appDiv.innerHTML = "<h1>Calculo de precio total de productos</h1>
+
+
+
+Ejercicios ----
+Crear una funcion llamada calcTotalPrice, que obtenga el total de los productos incluyendo el iva de cada 
+producto
+Crear un objeto llamado productsIva que añada todos los elementos de product junto con el iva de cada 
+producto. A dicha función se le pasará como parámetro un objeto product y un numero (iva). Esta función 
+debe de verificar que el objeto tiene la clave price (precio) 
