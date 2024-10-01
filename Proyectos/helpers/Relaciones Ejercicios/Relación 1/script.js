@@ -80,9 +80,22 @@ export const unirArrays = (...arr) => {
  * @param: {String} texto
  * @return: {number}
  */
-export const contarPalabras= (texto) =>{
+export const contarPalabras = (texto) => {
+    const contador = [];
+    const palabras = texto.split(' ');
 
+    for (const palabra of palabras) {
+        const objetoExistente = contador.find(obj => obj.Palabra === palabra);
+        if (objetoExistente) {
+            objetoExistente.vecesRepetida += 1;
+        } else {
+            contador.push({ Palabra: palabra, vecesRepetida: 1 });
+        }
+    }
+
+    return contador;
 };
+
 
 /**
  * @author: javiilpf

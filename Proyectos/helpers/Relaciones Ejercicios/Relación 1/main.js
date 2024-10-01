@@ -1,4 +1,4 @@
-import {sumaArrays, eliminarDuplicados, filtrarPares, unirArrays, ordenarNumeros, eliminarElemento, encontrarMaxMin, buscarElemento, dividirFragmento} from './script.js'
+import {sumaArrays, eliminarDuplicados, filtrarPares, unirArrays, ordenarNumeros, eliminarElemento, encontrarMaxMin, buscarElemento, dividirFragmento, contarPalabras} from './script.js'
 
 document.addEventListener("DOMContentLoaded", ()=>{
 
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     //console.log(unirArrays([1,2,3], [123, 124, 125]))
 
     //------------Ejercicio 5: ---------------
-
+    console.log(contarPalabras("Todo lo bueno, todo lo malo, todo pasa"));
     //------------Ejercicio 6: ---------------
     // console.log(ordenarNumeros([7,3,4,5,1,2]));
 
@@ -33,5 +33,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
     //console.log(buscarElemento([1, 3, 5, 7], 1));
 
     //------------Ejercicio 10-----------------
-    console.log (dividirFragmento([1,2,3,4,5,6,7,8,9], 3));
+    //console.log (dividirFragmento([1,2,3,4,5,6,7,8,9], 3));
+
+    
+
 });
