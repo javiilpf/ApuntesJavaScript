@@ -212,3 +212,85 @@ const maximo=numeros.reduce((acc, numero)=> acc>numero? acc : numero, numeros[0]
 let num=[];
 let dupl=[];
 //const duplic=numeros.reduce(acc, numero)=> numero+=1 , numeros[0]);
+
+// /**
+//  * @description: Dada la siguiente estructura de datos sobre la facturación de una serie de 
+//  * datos se pide: Calcular la facturación total de cada usuario
+//  * guardado en un array de objetos
+//  * @param {array} facturas
+//  * @returns {array}
+//  * @version 1.0
+//  * */
+// const facturacionTotal = (arrayfacturas) =>{
+  
+//   //const fac=facturas.reduce((acc, numero) => iguales.includes(facturas.nombre[acc])? :iguales.push(facturas[1]), [])
+  
+//   const miFactura={}
+//   arrayfacturas.map((factura)=>{
+//     if(miFactura[factura.nombre] == factura.nombre){
+//       // sumo el total que tenga + el nuevo total
+//     }else{
+//       //añado el nombre y el valor.
+//     }
+    
+//   })
+// }
+
+
+
+
+/**
+ *   Enunciado: Crear una funcion llamada eleccionDelegado que le pase obligatoriamente como primer parámetro un array, como segundo parámetro 
+ * un número(numero de alumnos) y automáticamente me generará un número aleatorio entre el 1 y el numero pasado como parámetro, ambos incluidos,
+ *  devolviendome el elemento del array que se encuentra en dicha posición menos 1
+ */ 
+
+export const eleccionDelegado=(arrayAlumnos, numero)=>{
+  //verificaciones
+  if(!arrayAlumnos.isArray() || typeof numero !== 'number' || numero<1 || numero>=arrayAlumnos.length){
+    return "error";
+  }
+  const aleatorio=[Math.floor(Math.random()*arrayAlumnos.length)-1];
+  return arrayAlumnos[aleatorio];
+
+}
+
+
+/**
+ * Ejercicio: Dado un array de palabras quiero que me conteis cuantas vocales hay en total
+ * Ejercicio2: Dado un array de palabras decirme la palabra con mayor longitud.
+ * ejercicio3: Dado un array de palabras eliminar las palabras duplicadas.
+ * ejercicio4: Dado un array de palabras crear un objeto cuyas claves sean las palabras y cuyos valores sean las veces que aparece la palabra.
+ */
+export const contarVocales = (arr) => {
+  const contador = 0;
+  arr.forEach((palabra) => {
+    for (let letra of palabra) {
+      if ('aeiou'.includes(letra.toLowerCase())) {
+        contador++;
+      }
+    }
+  });
+  return contador;
+  // contadorVocales+=palabra.match(/[aeiouAEIOUáéíóúÁÉÍÓÚ]/g).length
+  // const calvocales=(arr) => arr.reduce((acc, palabra)=>(acc+= palabra.match(/[aeiouAEIOUáéíóúÁÉÍÓÚ]/g).length), 0);
+};
+
+export const mayorLong=(arr)=>{
+  let palabra="";
+  for (const palabraArr of arr){
+    if (palabraArr.length > palabra.length){
+      palabra=palabraArr;
+    }
+  }
+  return `La palabra más larga del array es: ${palabra}`;
+  //return {[palabraLarga]:palabraLarga.length}
+}
+
+export const eliminarDupl=(arr)=>{
+  return new set(arr);
+}
+
+export const crearObjetos=(arr)=>{
+
+}

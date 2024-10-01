@@ -1,0 +1,12 @@
+Ejercicios
+
+Dada la siguiente estructura de datos sobre la facturación de una serie de 
+datos se pide: Calcular la facturación total de facturación de cada usuario
+guardado en un array de objetos
+const facturas=[
+    {nombre: "Luis", total: 300},
+    {nombre: "Sara", total: 200},
+    {nombre: "Sara", total: 100},
+    {nombre: "Carlos", total: 300},
+    {nombre: "Luis", total: 200},
+]

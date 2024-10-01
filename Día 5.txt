@@ -33,7 +33,7 @@ import {callTotalPrice, productIva} from './helpers/script.js
 const appDiv=document.getElementById('app');
 //------------Inicio de la aplicación-----------
 appDiv.innerHTML = "<h1>Calculo de precio total de productos</h1>
-
+appDiv.innerHTML = "<h1>Calculo de precio total de productos</h1>
 
 
 Ejercicios ----
