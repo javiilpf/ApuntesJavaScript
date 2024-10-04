@@ -10,3 +10,12 @@ const facturas=[
     {nombre: "Carlos", total: 300},
     {nombre: "Luis", total: 200},
 ]
+
+dado un string usa Map para contar la frecuencia de cada palabra.
+const texto="Lorem ipsun"
+const palabras=contarFrecuenciaPalabras();
+le doy dos toques a la funcion crtl+space, da la opción de agregar la importación
+
+const contarFrecuenciaPalabras =(texto)=>{
+
+}

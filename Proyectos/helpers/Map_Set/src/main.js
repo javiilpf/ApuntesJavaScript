@@ -1,0 +1,2 @@
+const texto="Ejemplo del uso de Map para contar la frecuencia de cada palabra en un texto, map es una estructura de datos que permite almacenar map map map almacenar";
+const palabras=contarFrecuenciaPalabras(texto);
