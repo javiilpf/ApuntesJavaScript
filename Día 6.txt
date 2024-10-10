@@ -19,3 +19,107 @@ le doy dos toques a la funcion crtl+space, da la opción de agregar la importaci
 const contarFrecuenciaPalabras =(texto)=>{
 
 }
+
+const persona={nombre: "Luis", edad: 33};
+const miNombre=persona.nombre; // Esto no.
+const { nombre, edad } = persona  // destructuring
+
+const numeros={
+    data: {
+        primerNumero: 10,
+        segundoNumero: 20,
+    },
+};
+
+Extrae primerNumero y segundoNumero
+
+const { primerNumero, segundoNumero } = numeros.data;
+
+otra forma
+
+const data:{{ primerNumero, segundoNumero }} = numeros 
+
+
+const persona={
+    id:23,
+    info:{
+        nombre: "María",
+        apellidos:"Cerdán",
+        edad: 20,
+    },
+};
+Dada la siguiente estructura saca las variables nombre y apellidos y si la propidad apellido no existe que ponga "desconocido"
+
+const {nombre, apellidos=noApellidos} =persona.info
+
+const persona={
+    nombre: "Carlos",
+    amigos: ["Ana", "David", "Pepe"]
+};
+extraer el nombre de la persona y el primer amigo de la lista.
+const { nombre, amigos : [primerAmigo] } persona;
+
+
+viernes 8 tenemos sorpresa
+
+https:jsonplaceholder.typicode.com
+
+Dada las estructuras de usuario de json placeholder se pide crear una funcion que me genere un resumen mostrándome el nombre de 
+usuario el email el nombre de la ciudad y la website de todos los usuarios que le pasemos en un array. Obligatoria la 
+desestruccuración de objetos para la realización del ejercicio.
+
+Crear una función llamada buscarCiudad que le pasemos como parametro mi array de data y la ciudad a buscar y me devuelva el nombre 
+del usuario y el email y la geolocalización.
+
+localStorage.setItem("miClave", "hola mundo");
+console.table(localStorage); // mete los elementos introducidos en una tabla 
+localStorage.length // es una propuiedad por eso no va con paréntesis
+
+const usuarios=[
+    {nombre: "Isaías", edad: 45},
+    {nombre: "Pedro, edad: 12},
+]
+// Dado el siguiente array de objetos, crear una función llamada saveLocalStorage, que le pase como segundo parámetro entre paréntesis "clave". Automáticamente realizará las siguientes comprobaciones:
+- comprobara que le he pasado como parámetros un array y una cadena de texto
+- Comprueba si existe o no la clave del localStorage, si existe mensaje ya está almacenada y si no existe lo almacena.
+Cuestiones a tener en cuenta
+
+const saveLocalStorage =(arrayData, keyFind)=>{
+    if (!Array.isArray(arrayData) || typeof keyFind=="string" || localStorage.hasOwnProperty(keyFind)){
+        throw new error("Los argumentos no son válidos");
+    }
+    localStorage.setItem(keyFindm, JSON.stringify(arrayData));
+}
+
+
+ // Borrar el localStorage antes de empezar
+
+/ casa
+Crear una funcion que le pase como parámetro una cadena de texto (clave) y automaticamente haga las siguientes acciones:
+-- Comprueba que le pasa como parámetro una cadena de texto.
+-- Verifica si la cadena de texto es una clave del localStorage. Si no es una clave mensaje de error "no existe una clave... " si existe se carga.
+
+
+Crear una función que le pase como parámetros una clave (o un string) un string (texto a buscar) y automáticamente buscará dentro de 
+la clave del localstorage el elemento que le pasemos como segundo parámetro. la verificacion ni se dicta pero si
+
+Crear una función modifyLocalStorage que le pase como parámetro una clave string un newID y buscar el nombre del id (newId) y 
+automáticamente, si existe modificará la id del usuario.
+
+const modifyLocalStorage = (keyFind, userName, newId)=>{
+    /** if (typeof keyFind=="string" || localStorage.hasOwnProperty(keyFind)){
+    *    throw new error("Los argumentos no son válidos");
+    }**/
+    Nos saltamos las comprobaciones pero tengo que revisar eso>>>>
+
+    //metodos que no modifican la data de partida (map)
+    miData.foreach((element)=>{
+        if (element.nombre===userName){
+            element.edad=newEdad;
+        }
+    });
+    
+
+
+
+}
