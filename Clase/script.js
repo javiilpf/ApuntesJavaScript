@@ -294,3 +294,32 @@ export const eliminarDupl=(arr)=>{
 export const crearObjetos=(arr)=>{
 
 }
+
+
+export const comprobarLocalStorage = (clave) => {
+  if (typeof clave !== "string") {
+    throw new Error("No es un string");
+  } else {
+    const valor = localStorage.getItem(clave);
+    if (valor === null) {
+      throw new Error("No existe");
+    } else {
+      return valor;
+    }
+  }
+}
+
+export const buscarLocalStorage = (clave, textoBuscar) => {
+  if ((typeof clave=="string") ||(typeof textoBuscar=="string") || localStorage.hasOwnProperty(clave)){
+    throw new error("Los argumentos no son válidos");
+  }
+  localStorage.setItem(clave, JSON.stringify(textoBuscar));
+}
+
+export const modifyLocalStorage=(clave, newId)=>{
+  //localStorage.clear();
+  if ((typeof clave=="string") || (localStorage.hasOwnProperty(newId))){
+    localStorage.modifyLocalStorage(clave, newId)
+  }
+
+}

@@ -118,8 +118,4 @@ const modifyLocalStorage = (keyFind, userName, newId)=>{
             element.edad=newEdad;
         }
     });
-    
-
-
-
 }
