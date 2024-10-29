@@ -1,0 +1,247 @@
+{
+  "pokemons": [
+    {
+      "id": "1",
+      "nombre": "Pikachu",
+      "habilidades": [
+        {
+          "nombre": "Impactrueno",
+          "puntuacion": 8
+        },
+        {
+          "nombre": "Ataque Rápido",
+          "puntuacion": 6
+        },
+        "Quick Attack",
+        "Thunderbolt"
+      ],
+      "puntuacionTotal": 14,
+      "precio": 28
+    },
+    {
+      "id": "2",
+      "nombre": "Charizard",
+      "habilidades": [
+        {
+          "nombre": "Llamarada",
+          "puntuacion": 10
+        },
+        {
+          "nombre": "Vuelo",
+          "puntuacion": 9
+        }
+      ],
+      "puntuacionTotal": 19,
+      "precio": 38
+    },
+    {
+      "id": "3",
+      "nombre": "Bulbasaur",
+      "habilidades": [
+        {
+          "nombre": "Latigazo",
+          "puntuacion": 7
+        },
+        {
+          "nombre": "Drenadoras",
+          "puntuacion": 5
+        }
+      ],
+      "puntuacionTotal": 12,
+      "precio": 24
+    },
+    {
+      "id": "4",
+      "nombre": "Squirtle",
+      "habilidades": [
+        {
+          "nombre": "Pistola Agua",
+          "puntuacion": 6
+        },
+        {
+          "nombre": "Burbuja",
+          "puntuacion": 5
+        }
+      ],
+      "puntuacionTotal": 11,
+      "precio": 22
+    },
+    {
+      "id": "5",
+      "nombre": "Jigglypuff",
+      "habilidades": [
+        {
+          "nombre": "Canto",
+          "puntuacion": 8
+        },
+        {
+          "nombre": "Rizo Defensa",
+          "puntuacion": 4
+        }
+      ],
+      "puntuacionTotal": 12,
+      "precio": 24
+    },
+    {
+      "id": "6",
+      "nombre": "Gengar",
+      "habilidades": [
+        {
+          "nombre": "Bola Sombra",
+          "puntuacion": 9
+        },
+        {
+          "nombre": "Lenguetazo",
+          "puntuacion": 6
+        }
+      ],
+      "puntuacionTotal": 15,
+      "precio": 30
+    },
+    {
+      "id": "7",
+      "nombre": "Eevee",
+      "habilidades": [
+        {
+          "nombre": "Ataque Rápido",
+          "puntuacion": 5
+        },
+        {
+          "nombre": "Refuerzo",
+          "puntuacion": 4
+        }
+      ],
+      "puntuacionTotal": 9,
+      "precio": 18
+    },
+    {
+      "id": "8",
+      "nombre": "Snorlax",
+      "habilidades": [
+        {
+          "nombre": "Golpe Cuerpo",
+          "puntuacion": 9
+        },
+        {
+          "nombre": "Descanso",
+          "puntuacion": 7
+        }
+      ],
+      "puntuacionTotal": 16,
+      "precio": 32
+    },
+    {
+      "id": "9",
+      "nombre": "Dragonite",
+      "habilidades": [
+        {
+          "nombre": "Puño Trueno",
+          "puntuacion": 10
+        },
+        {
+          "nombre": "Vuelo",
+          "puntuacion": 8
+        }
+      ],
+      "puntuacionTotal": 18,
+      "precio": 36
+    },
+    {
+      "id": "10",
+      "nombre": "Mewtwo",
+      "habilidades": [
+        {
+          "nombre": "Psíquico",
+          "puntuacion": 10
+        },
+        {
+          "nombre": "Onda Mental",
+          "puntuacion": 10
+        }
+      ],
+      "puntuacionTotal": 20,
+      "precio": 40
+    },
+    {
+      "id": "11",
+      "nombre": "Zapdos",
+      "habilidades": [
+        {
+          "nombre": "Rayo",
+          "puntuacion": 9
+        },
+        {
+          "nombre": "Ataque Aéreo",
+          "puntuacion": 8
+        }
+      ],
+      "puntuacionTotal": 17,
+      "precio": 34
+    },
+    {
+      "id": "12",
+      "nombre": "Articuno",
+      "habilidades": [
+        {
+          "nombre": "Viento Hielo",
+          "puntuacion": 8
+        },
+        {
+          "nombre": "Ataque Aéreo",
+          "puntuacion": 7
+        }
+      ],
+      "puntuacionTotal": 15,
+      "precio": 30
+    },
+    {
+      "id": "13",
+      "nombre": "Moltres",
+      "habilidades": [
+        {
+          "nombre": "Ascuas",
+          "puntuacion": 8
+        },
+        {
+          "nombre": "Ataque Aéreo",
+          "puntuacion": 7
+        }
+      ],
+      "puntuacionTotal": 15,
+      "precio": 30
+    },
+    {
+      "id": "3dba"
+    },
+    {
+      "id": "37b8"
+    }
+  ],
+  "multiplicador": 2,
+  "carrito": {
+    "items": [
+      {
+        "id": 1,
+        "nombre": "Pikachu",
+        "cantidad": 1,
+        "precioUnitario": 28,
+        "precioTotal": 28
+      },
+      {
+        "id": 5,
+        "nombre": "Jigglypuff",
+        "cantidad": 2,
+        "precioUnitario": 24,
+        "precioTotal": 48
+      },
+      {
+        "id": 8,
+        "nombre": "Snorlax",
+        "cantidad": 1,
+        "precioUnitario": 32,
+        "precioTotal": 32
+      }
+    ],
+    "totalCarrito": 108
+  }
+}

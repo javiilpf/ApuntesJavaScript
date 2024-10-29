@@ -87,7 +87,26 @@
   
 // //     getUsers();
 // //   });
-  
+  /**
+   * 
+   *const allCharacters=resultPromiseAll.reduce((acc, page)=>acc.concat(page.results), []);
+   * export async function fetchAllCharacterPromiseSttled(){
+   *  const loadingINdicador=document.createElement("div");
+   *  let allCharacters=[];
+   *  const promisePagesArray=[];
+   *  try{
+   *  console.time("fetchAllCharacterPromiseSettled")}
+   * for(let i=1; i<9;i++){
+   *  promisePagesArray.push(
+   *  fetch(`${VITE_API_URL}?page=${i}`))
+   *  .then ((response)=>{
+   * 
+   *  })
+   *  .catch((error)=>
+   * console.error("Error en la petición fetchAllCharacterPromiseSettled"))
+   *  }
+   * }
+   */
 
 export async function fetchAllCharacterPromiseAll(){
   try{
