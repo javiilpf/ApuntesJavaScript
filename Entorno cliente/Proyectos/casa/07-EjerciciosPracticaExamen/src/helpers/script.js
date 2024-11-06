@@ -187,3 +187,215 @@ export const updateProduct=async(updatedData, idData)=>{
     
 
 }
+
+
+/**
+ * @description: Ejercicio4: Eliminar productos.
+ */
+
+export const deleteProducts=async (idProducto)=>{
+    try{
+        const response= await fetch(`${urlData3}productos/${idProducto}`, {
+            method:'DELETE'
+        });
+        if(!response.ok){
+            throw new Error("Error en la aplicación");
+        }
+        console.log("Producto eliminado");
+    }catch (error){
+        console.error("error en la aplicación: ", error);
+    }
+}
+
+/**
+ * @description: Obtener y crear categorías
+ */
+
+export function getCategorías(){
+    return fetch (`${urlData3}categorias`,{
+        method: 'GET',
+
+    })
+    .then(response=>{
+        if(!response.ok){
+            console.error("la respuesta no ha sido la esperada");
+        }
+        return response.json()
+    })
+}
+export function setCategorias(categoria){
+    return fetch(`${urlData3}categorias`, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json',},
+        body: JSON.stringify(categoria)
+    })
+    .then(response=>{
+        if(!response.ok){
+            console.error("No se ha podido añadir correctamente");
+        }
+        return response.json();
+    })
+}
+
+export function promesa(newCat){
+    Promise.all([getCategorías(), setCategorias(newCat)])
+    .then(([categorias, categoriasCreadas])=>{
+        console.log("Categorías obtenidas: ", categorias);
+        console.log("Categorias Creadas: ", categoriasCreadas);
+    })
+    .catch(e =>{
+        throw new Error(e);
+    })
+}
+
+/**
+ * @description: Remix actividad 4 pero usando promise.allSettled
+ */
+
+export const deleteProductsById=async(productId)=>{
+    try{
+        const response=await fetch(`${urlData3}productos/${productId}`,{
+            method: 'DELETE'
+        });
+        if(!response.ok){
+            console.error("Error al eliminar el producto")
+        }
+        return {
+            status: 'fulfilled',
+            productId,
+        }
+    }catch(error){
+        return {
+            status: 'rejected',
+            productId,
+            reason:error.message,
+        }
+    }
+}
+export const deleteMultipleProducts=async(productsIds)=>{
+    const deletePromises=productsIds.map(id=> deleteProductsById(id));
+    const results=await Promise.allSettled(deletePromises);
+    console.log(results);
+    results.forEach(result=>{
+        if(result.status==='fulfilled'){
+
+            console.log(`El elemento con id: ${result.value.productId} se ha eliminado correctamente`);
+        }else{
+            console.log(`El elemento con id: ${result.value.productId} no eliminado.`)
+        }
+    })
+}
+
+/**
+ * @description: Ejercicio 7: Filtrar productos.
+ */
+
+export const filterProducts=async({precioMin=0, precioMax=Infinity, stockMin=0, stockMax=Infinity})=>{
+try{
+
+
+    const response= await fetch(`${urlData3}productos`);
+    if(!response.ok){
+        throw new Error("Error al hacer el fetch");
+    };
+    const data=await response.json();
+    const productosFiltrados=data.filter(producto=>
+        producto.precio >= precioMin &&
+        producto.precio <= precioMax &&
+        producto.stock >= stockMin &&
+        producto.stock <= stockMax
+    )
+    return productosFiltrados;
+}catch(error){
+    console.error("Error en la ejecución de la apoi", error);
+}
+
+}
+
+/**
+ * @description: Ejercicio 3, hemos vuelto atras como los cangrejos
+ */
+
+const urlData5=import.meta.evn.VITE_API_URL;
+
+export const getUsers=async()=>{
+    try{
+        const response =await fetch(`${urlData5}users`);
+        if(!response.ok){
+            console.error("error en la extracción de la data");
+        }
+        return response.json();
+    }catch(error){
+        console.error("Error en la consulta a la url", error);
+    }
+}
+export const getPosts=async()=>{
+    try{
+        const response =await fetch(`${urlData5}posts`);
+        if(!response.ok){
+            console.error("error en la extracción de la data");
+        }
+        return response.json();
+    }catch(error){
+        console.error("Error en la consulta a la url", error);
+    }
+}
+export const getComments=async()=>{
+    try{
+        const response =await fetch(`${urlData5}comments`);
+        if(!response.ok){
+            console.error("error en la extracción de la data");
+        }
+        return response.json();
+    }catch(error){
+        console.error("Error en la consulta a la url", error);
+    }
+}
+export const getPromiseAll=()=>{
+    Promise.all([getUsers(),getPosts(), getComments()])
+    .then(([usuarios, post, comentarios])=>{
+        console.log(usuarios);
+        console.log(post);
+        console.log(comentarios);
+    })
+    .catch(error=>{
+        console.error("Error: ", error)
+    })
+    
+}
+export const fetchAllSet = async (string) => {
+    try{
+      const response = await fetch(`${URL1}/${string}`, {
+        method:'GET'
+      });
+  
+      if(!response.ok){
+        throw new Error('No se ha conectado a la bd');
+      }
+  
+      return response.json();
+  
+  
+    }catch(e){
+      throw new Error(e);
+    }
+  }
+  
+  export const AllSet = async (strings) => {
+  
+    try{
+        const fetch = strings.map(string => fetchAllSet(string));
+        const results = await Promise.allSettled(fetch);
+        results.forEach(result => {
+          if(result.status === 'fulfilled') {
+            console.log(result.value);
+          }else{
+            console.log("error");
+          }
+        })
+  
+    }catch(e){
+      throw new Error(e)
+  }
+  
+  }
