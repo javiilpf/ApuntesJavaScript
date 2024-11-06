@@ -69,3 +69,25 @@ export const getCartas=async() =>{
  * @description: Ejercicio 3: Filtrar pokemon por habilidades.
  */
 
+const dataUrl2="http://localhost:3000/pokemons";
+
+export const filterHabilitiesPokemons=async(habilidad)=>{
+    try{
+        const response=await fetch(dataUrl2);
+        if(!response.ok){
+            throw new error ("No se puede extraer la información del json");
+        }
+        const data=await response.json();
+        const pokemonMap1=new Map();
+        data.forEach((pokemon) =>{
+            if(pokemon.habilidades.includes(habilidad)){
+                pokemonMap1.set(pokemon);
+            }
+        })
+        return pokemonMap1;
+
+
+    }catch(error){
+        console.error ("no se puede resolver la petición",error);
+    }
+}

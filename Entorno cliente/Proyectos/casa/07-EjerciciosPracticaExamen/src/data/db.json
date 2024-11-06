@@ -1,0 +1,70 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "nombre": "Producto 1_repe",
+      "stock": 200,
+      "precio": 10.99,
+      "categoriaId": 1
+    },
+    {
+      "id": "2",
+      "nombre": "Producto 2",
+      "stock": 20,
+      "precio": 49.99,
+      "categoriaId": 2
+    },
+    {
+      "id": "3",
+      "nombre": "Producto 3",
+      "stock": 500,
+      "precio": 30.99,
+      "categoriaId": 1
+    }
+  ],
+  "categorias": [
+    {
+      "id": "1",
+      "nombre": "Electrónica"
+    },
+    {
+      "id": "2",
+      "nombre": "Ropa"
+    }
+  ],
+  "comentarios": [
+    {
+      "id": "1",
+      "productoId": 1,
+      "usuario": "Juan",
+      "contenido": "Excelente producto!",
+      "calificacion": 5
+    },
+    {
+      "id": "2",
+      "productoId": 2,
+      "usuario": "Maria",
+      "contenido": "Buena calidad.",
+      "calificacion": 4
+    }
+  ],
+  "historialPrecios": [
+    {
+      "productoId": 1,
+      "precios": [
+        29.99,
+        24.99,
+        19.99
+      ],
+      "id": "1a50"
+    },
+    {
+      "productoId": 2,
+      "precios": [
+        49.99,
+        39.99
+      ],
+      "id": "db0c"
+    }
+  ]
+}
