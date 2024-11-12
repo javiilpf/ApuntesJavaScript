@@ -1,0 +1,19 @@
+{
+  "name": "examen-recetas-javascript",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "examen":"json-server --watch src/data/db.json --port 3500",
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.10"
+  },
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}

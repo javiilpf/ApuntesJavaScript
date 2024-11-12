@@ -1,0 +1,153 @@
+{
+  "recetas": [
+    {
+      "id": "1",
+      "nombre": "Pasta Carbonara",
+      "tiempo": 25,
+      "dificultad": "facil",
+      "ingredientes": [
+        "pasta",
+        "huevo",
+        "bacon",
+        "queso"
+      ],
+      "categorias": [
+        "pasta",
+        "con-gluten"
+      ],
+      "pasos": [
+        "Hervir los espaguetis según las instrucciones del paquete.",
+        "Freír el bacon hasta que esté crujiente.",
+        "Mezclar los huevos con el queso parmesano en un bol.",
+        "Combinar los espaguetis, el bacon y la mezcla de huevo."
+      ],
+      "valoracion": 4.5
+    },
+    {
+      "id": "2",
+      "nombre": "Ensalada César",
+      "tiempo": 15,
+      "dificultad": "facil",
+      "ingredientes": [
+        "lechuga",
+        "pollo",
+        "queso parmesano",
+        "crutones",
+        "aderezo césar"
+      ],
+      "categorias": [
+        "ensalada",
+        "con-gluten"
+      ],
+      "pasos": [
+        "Lavar y trocear la lechuga.",
+        "Cocinar el pollo a la parrilla y cortarlo en tiras.",
+        "Mezclar la lechuga, el pollo, los crutones y el queso parmesano.",
+        "Agregar el aderezo césar al gusto."
+      ],
+      "valoracion": 4.2
+    },
+    {
+      "id": "3",
+      "nombre": "Sopa de Tomate",
+      "tiempo": 30,
+      "dificultad": "media",
+      "ingredientes": [
+        "tomates",
+        "cebolla",
+        "ajo",
+        "caldo de verduras",
+        "aceite de oliva"
+      ],
+      "categorias": [
+        "sopa",
+        "vegetariana"
+      ],
+      "pasos": [
+        "Picar la cebolla y el ajo.",
+        "Saltear la cebolla y el ajo en aceite de oliva hasta que estén dorados.",
+        "Añadir los tomates troceados y el caldo de verduras.",
+        "Dejar hervir a fuego lento durante 20 minutos.",
+        "Pasar la mezcla por una batidora hasta obtener una crema suave."
+      ],
+      "valoracion": 4.7
+    },
+    {
+      "id": "4",
+      "nombre": "Pizza Margherita",
+      "tiempo": 40,
+      "dificultad": "media",
+      "ingredientes": [
+        "masa para pizza",
+        "tomates",
+        "mozzarella",
+        "albahaca",
+        "aceite de oliva"
+      ],
+      "categorias": [
+        "pizza",
+        "con-gluten"
+      ],
+      "pasos": [
+        "Precalentar el horno a 220°C.",
+        "Extender la masa para pizza en una bandeja para hornear.",
+        "Cubrir la masa con salsa de tomate y añadir la mozzarella.",
+        "Hornear durante 15 minutos o hasta que la masa esté dorada.",
+        "Sacar del horno y decorar con hojas de albahaca fresca."
+      ],
+      "valoracion": 6
+    },
+    {
+      "id": "5",
+      "nombre": "Tacos de Pollo",
+      "tiempo": 30,
+      "dificultad": "media",
+      "ingredientes": [
+        "pollo",
+        "tortillas",
+        "aguacate",
+        "tomates",
+        "cilantro",
+        "limón"
+      ],
+      "categorias": [
+        "mexicana",
+        "pollo"
+      ],
+      "pasos": [
+        "Cocinar el pollo a la parrilla y desmenuzarlo.",
+        "Cortar el aguacate, los tomates y el cilantro.",
+        "Calentar las tortillas en una sartén.",
+        "Montar los tacos con pollo, aguacate, tomate y cilantro.",
+        "Exprimir un poco de limón por encima antes de servir."
+      ],
+      "valoracion": 4.4
+    },
+    {
+      "id": "6",
+      "nombre": "Brownies de Chocolate",
+      "tiempo": 45,
+      "dificultad": "alta",
+      "ingredientes": [
+        "chocolate",
+        "azúcar",
+        "huevo",
+        "harina",
+        "mantequilla"
+      ],
+      "categorias": [
+        "postre",
+        "chocolate"
+      ],
+      "pasos": [
+        "Precalentar el horno a 180°C.",
+        "Derretir el chocolate y la mantequilla juntos.",
+        "Batir el azúcar y los huevos hasta obtener una mezcla suave.",
+        "Añadir la mezcla de chocolate y mantequilla a los huevos batidos.",
+        "Incorporar la harina y mezclar bien.",
+        "Verter la mezcla en un molde y hornear durante 30 minutos."
+      ],
+      "valoracion": 4.9
+    }
+  ]
+}

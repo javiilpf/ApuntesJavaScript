@@ -280,7 +280,7 @@ export const deleteMultipleProducts=async(productsIds)=>{
         if(result.status==='fulfilled'){
 
             console.log(`El elemento con id: ${result.value.productId} se ha eliminado correctamente`);
-        }else{
+        }else{ 
             console.log(`El elemento con id: ${result.value.productId} no eliminado.`)
         }
     })
